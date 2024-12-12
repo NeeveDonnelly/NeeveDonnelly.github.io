@@ -6,10 +6,29 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Neeve Donnelly Portfolio</title>
     <style>
+        html {
+  --s: 300px; /* control the size*/
+  --c1: #005c56;
+  --c2: #487054;
+  --c3: #55897c;
+  
+  --_l:#0000 calc(25%/3),var(--c1) 0 25%,#0000 0;
+  --_g:conic-gradient(from 120deg at 50% 87.5%,var(--c1) 120deg,#0000 0);
+  background:
+    var(--_g),var(--_g) 0 calc(var(--s)/2),
+    conic-gradient(from 180deg at 75%,var(--c2) 60deg,#0000 0),
+    conic-gradient(from 60deg at 75% 75%,var(--c1) 0 60deg,#0000 0),
+    linear-gradient(150deg,var(--_l)) 0 calc(var(--s)/2),
+    conic-gradient(at 25% 25%,#0000 50%,var(--c2) 0 240deg,var(--c1) 0 300deg,var(--c2) 0),
+    linear-gradient(-150deg,var(--_l)) var(--c3);
+  background-size: calc(0.866*var(--s)) var(--s);
+}
         /* Basic CSS styling included directly in the HTML */
         body {
             font-family: Arial, sans-serif;
+            color: black;
             margin: 0;
+            text-color: white;
             padding: 0;
             line-height: 1.6;
         }
@@ -70,8 +89,10 @@
             <h2>About Me</h2>
             <p style="display:inline-block;""font-size:20px; ">
                 <img src="docs/assets/IMG_2774.JPG" alt="Professional Photo" width="200" height="300" /><br>
-                Hello, my name is Neeve!<br> I am a 4th year Envrionmental Data Science Major at Michigan Tech<br>And this is my project portfolio.<br><br>
-                Technical Skills:
+                Hello, my name is Neeve!<br> I am a 4th year Envrionmental Data Science Major at Michigan Tech, and this is my project portfolio. 
+                <br>I am passionate about nature and the outdoors, which is why I aim to work with it and protect it both in and out of my career. 
+                I am a proud member of the LGBTQ+ community, and I strive to help create around me a safe envrionemnt for all to express themselves freely and feel safe.<br>
+                <h3>Technical Skills:</h3>
                 <ul>
                     <li>HTML</li> <li>PHP</li> <li>C</li> <li>SOLIDWORKS</li> <li>Sieman's NX</li> <li>Microsoft Office Applications</li> <li>AutoCAD</li> <li>Java</li> <li>MIPS Assembly</li> <li>SQL</li> <li>ARCGIS</li> <li>Intermediate Spanish</li>
                 </ul>
@@ -86,7 +107,7 @@
                 <p>
                     This project was an attempt to make a functional (but not real) online shop through files hosted on a private network and an interconnected database.
                     The files primarily used PHP and HTML for programming languages, and statements to setup an SQL database were also developed. 
-                    The project was a collaboration between Icarus Hickman and myself, as a part of the CS3425 - Introductions To Database Systems final project.
+                    The project was a collaboration between Icarus Hickman and myself, as a part of the CS3425 - Introductions To Database Systems final project.<br>
                     <img style="max-width: 300px; height: auto; " src="docs/assets/Store1.png" />     <img style="max-width: 500px; height: auto; " src="docs/assets/Store2.png" />
                 </p>
             </p>
