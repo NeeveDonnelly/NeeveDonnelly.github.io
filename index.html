@@ -40,15 +40,18 @@
             padding: 20px;
         }
 
-        footer {
-            text-align: center;
-            padding: 1rem 0;
-            background-color: #333;
+        .button {
+            display: inline-block;
+            padding: 10px 20px;
+            background-color: #007BFF;
             color: white;
-            position: fixed;
-            width: 100%;
-            bottom: 0;
+            text-decoration: none;
+            border-radius: 5px;
+            font-size: 16px;
+            text-align: center;
+            cursor: pointer;
         }
+
     </style>
 </head>
 <body>
@@ -65,11 +68,11 @@
     <main>
         <section id="about">
             <h2>About Me</h2>
-            <p style="display:inline-block;">
+            <p style="display:inline-block;""font-size:14px; ">
                 <img src="docs/assets/IMG_2774.JPG" alt="Professional Photo" width="200" height="300" /><br>
-                style="font-size:14px; "
                 Hello! my name is Neeve!<br> I am a 4th year Envrionmental Data Science Major <br>This is my project portfolio.
             </p>
+            <a href="docs/assets/Donnelly-Neeve_Resume_Fall-2024.pdf" download class="button">Download Resume</a>
         </section>
         <section id="projects">
             <h2>Projects</h2>
@@ -82,11 +85,7 @@
 </p>
         </section>
     </main>
-    <footer>
-        <p>Neeve Donnelly, 2024</p>
-    </footer>
     <script>
-        // Basic JavaScript included directly in the HTML
         console.log("Portfolio site loaded!");
     </script>
 </body>
